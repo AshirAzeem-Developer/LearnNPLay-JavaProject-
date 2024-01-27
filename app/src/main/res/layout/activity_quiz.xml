@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Quiz">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:shadowColor="#841818"
+        android:text="Learn n' Play"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        tools:ignore="HardcodedText,TextSizeCheck,VisualLintOverlap" />
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="117dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+
+        android:layout_marginEnd="334dp"
+
+        android:layout_marginBottom="614dp"
+        android:backgroundTint="#00FBFBFB"
+        android:contentDescription="@string/NullString"
+        android:fontFamily="@font/bubblegum_sans"
+        app:icon="@drawable/back_icon"
+        app:iconPadding="100dp"
+        app:iconSize="40dp"
+        app:iconTint="@color/white"
+        app:iconTintMode="multiply"
+        tools:ignore="RelativeOverlap" />
+
+    <ImageView
+        android:id="@+id/questionImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:contentDescription="Question Image"
+        android:src="@drawable/ic_launcher_foreground"
+        tools:ignore="HardcodedText" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionImageView"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Option 1"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Option 2"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Option 3"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="80dp"
+        android:backgroundTint="@color/myYellow"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="Submit"
+        android:textColor="@color/myBlue"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/restartBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="#fe3c42"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="Restart"
+        android:textColor="#FFAB00"
+        android:visibility="gone"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitBtn"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="center"
+            android:text="Timer: 0s"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="center"
+            android:text="Score: 0"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</RelativeLayout>

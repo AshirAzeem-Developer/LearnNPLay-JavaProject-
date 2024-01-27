@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">LearnNPlay</string>
+    <string name="btn_register">Register</string>
+    <string name="AgeInp">Age</string>
+    <string name="ParentEmailHint">Parent\'s Email</string>
+    <string name="AgeHint">Age</string>
+    <string name="NameInpHint">Name</string>
+    <string name="GreetingMessage">Welcome to Learn n play</string>
+    <string name="Signup">SignUp</string>
+    <string name="BgContentDec">Logo Here</string>
+    <string name="LoginBtn">Login</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="LoginHead">SignIn</string>
+    <string name="SignupLink">New User ?     Go to SignUp</string>
+    <string name="ImgDesc">Image description</string>
+    <string name="Alphabets">Alphabets Learning</string>
+    <string name="Numbers">Numbers Learning</string>
+    <string name="Colors">Colors     Learning</string>
+    <string name="shapes_learn">Shapes Learning</string>
+    <string name="Shapes">Shapes of the child</string>
+    <string name="setting">Profile setting</string>
+    <string name="rating">Rate my app</string>
+    <string name="NullString">" "</string>
+    <string name="WhichColor">Which Color ?</string>
+    <string name="AppHead">Learn n\' Play</string>
+    <string name="Dummy">Dummy</string>
+    <string name="ScoreDisplay">Score : 0</string>
+    <string name="ShapeLearn">Which Shape</string>
+    <string name="Alphabet">Alphabet Called ?</string>
+    <string name="NumbersLearn">Which Number ?</string>
+</resources>

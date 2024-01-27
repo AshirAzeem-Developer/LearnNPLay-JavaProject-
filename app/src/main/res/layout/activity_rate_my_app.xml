@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <!-- Feedback title -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="Your Feedback"
+        android:textColor="@color/white"
+        android:textSize="48sp" />
+
+    <!-- Feedback input -->
+
+    <!-- Rating Bar -->
+    <EditText
+        android:id="@+id/editTextFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blue_bg"
+        android:hint="Type your feedback here"
+        android:padding="25dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextFeedback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@color/white"
+        android:numStars="5"
+        android:padding="20dp"
+        android:rating="0"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="299dp"
+        android:layout_height="69dp"
+        android:layout_alignStart="@+id/ratingBar"
+        android:layout_alignEnd="@+id/ratingBar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-25dp"
+        android:layout_marginEnd="-34dp"
+        android:layout_marginBottom="328dp"
+        android:background="@drawable/custom_style"
+        android:padding="12dp"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <!-- Submit button -->
+
+</RelativeLayout>
